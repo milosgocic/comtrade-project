@@ -18,7 +18,7 @@ a:hover {
 /*** home page ***/
 
 .home-page {
-    background-image: linear-gradient(rgba(141, 65, 65, 0.7), rgba(80, 38, 38, 0.7)), url(../img/1.1.jpg);
+    background-image: linear-gradient(rgba(141, 65, 65, 0.7), rgba(80, 38, 38, 0.7)),  url(../img/1.1.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -241,6 +241,7 @@ blockquote {
 
 .footer {
     background-color: #f2f2f2;
+    border-top: 1px solid rgb(165, 165, 165);
 }
 .list {
     list-style: none;
