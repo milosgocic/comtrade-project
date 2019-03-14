@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,67 +10,107 @@
     <title>Креирај догађај</title>
 </head>
 <body>
-    <div class="container-fluid formwall">
-        <div class="row">
-            <form action="">
-                <fieldset>
-                    <legend>Личне информације:</legend>
-                    <label for="ime">Име:</label>
-                    <input type="text" name="ime" id="ime"> <br>
-                    <label for="prezime">Презиме:</label>
-                    <input type="text" name="prezime" id="prezime"> 
-                </fieldset> <br>
-                <p>Изабери догађај:</p>
-                <select>
-                        <optgroup label="Представа">
-                          <option value="драма">Драма</option>
-                          <option value="опера">Опера</option>
-                          <option value="балет">Балет</option>
-                        </optgroup>
-                        <optgroup label="Филм">
-                          <option value="трилер">Трилер</option>
-                          <option value="комедија">Комедија</option>
-                          <option value="документарни">Документарни</option>
-                        </optgroup>
-                        <optgroup label="Музеј">
-                          <option value="ликовна">Ликовна уметност</option>
-                          <option value="историја">Историја</option>
-                          <option value="вајарство">Вајарство</option>
-                        </optgroup>
-                        <optgroup label="Концерт">
-                          <option value="класичан">Класичан</option>
-                          <option value="џез">Џез</option>
-                          <option value="народни">Народни</option>
-                        </optgroup>
-                      </select> <br>
-                <label for="lokacija">Локација:</label>
-                <select name="" id="">
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                </select> <br>
-                <label for="naziv">Назив догађаја:</label>
-                <input type="text" name="" id="naziv">
-                <fieldset>
-                    <label for="broj">Очекивани број посетилаца:</label>
-                    <input type="text" id="broj"> <br>
-                    <label for="datum">Датум и време:</label>
-                    <input type="datetime-local" id="datum">
-                </fieldset> <br>
-                <label for="opis">Кратак опис догађаја:</label>
-                <textarea name="" id="opis" cols="30" rows="2"></textarea> <br>
-                <input type="button" name="Posalji" id="" value="Salji">
+  <div class="container-fluid formwall">
+    <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <form>
 
-            </form>
-            
+              <fieldset>
+                <legend>Личне информације:</legend>
+                <label for="name">Име:</label> 
+                <input type="text" name="" id="name"> <br>
+                <label for="last-name">Презиме:</label>
+                <input type="text" name="" id="last-name"> <br>
+              </fieldset> <br>
 
+              <fieldset>
+                <label for="event">Изабери догађај:</label>
+                <select name="dogadjaj" id="event">
+                  <optgroup>
+                    <option value="wrong">-------</option>
+                  </optgroup>
+                  <optgroup label="Позориште">
+                    <option value="Представа">Представа</option>
+                    <option value="Опера">Опера</option>
+                    <option value="Балет">Балет</option>
+                  </optgroup>
+                  <optgroup label="Музеј">
+                    <option value="Историја">Историја</option>
+                    <option value="Вајарство">Вајарство</option>
+                    <option value="Сликарство">Сликарство</option>
+                  </optgroup>
+                  <optgroup label="Биоскоп">
+                    <option value="Трилер">Трилер</option>
+                    <option value="Комедија">Комедија</option>
+                    <option value="Документарни">Документарни</option>
+                  </optgroup>
+                </select> <br> <br>
+                <label for="location">Локација:</label> 
+                <select name="Lokacija" id="location"> 
+                  <optgroup>
+                    <option value="wrong">-------</option>
+                  </optgroup>
+                  <optgroup label="Позориште">
+                    <option value="Позориште на теразијама">Позориште на теразијама</option>
+                    <option value="Југословенско драмско">Југословенско драмско</option>
+                    <option value="Мадленианум">Мадленианум</option>
+                  </optgroup>
+                  <optgroup label="Музеј">
+                    <option value="Музеј савремене уметности">Музеј савремене уметности</option>
+                    <option value="Природњачки музеј">Природњачки музеј</option>
+                    <option value="Војни музеј">Војни музеј</option>
+                  </optgroup>
+                  <optgroup label="Биоскоп">
+                    <option value="Таквуд">Таквуд</option>
+                    <option value="Фонтана">Фонтана</option>
+                    <option value="Студентски биоскоп">Студентски биоскоп</option>
+                  </optgroup>
+                </select> <br> <br>
+                <label for="name-event">Назив догађаја:</label> 
+                <input type="text" name="" id="name-event"> 
+              </fieldset> <br>
+
+              <fieldset>
+                <label for="visitors">Очекивани број посетилаца:</label>
+                <input type="text" name="" id="visitors"> <br> <br>
+                <label for="date">Датум:</label>
+                <input type="date" name="" id="date"> <br> <br>
+                <label for="time">Време:</label>
+                <input type="time" name="" id="time"> <br> <br>
+                <label for="description">Кратак опис догађаја:</label>
+                <textarea name="" id="description" cols="20" rows="2"></textarea> 
+              </fieldset> <br>
+
+              <input type="button" name="" id="" value="Шаљи" onclick="validateForm()">
+        </div> 
+      
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div id="new-form">
+          
+          <p id="new-name"></p>
+          
+          <p id="new-last-name"></p>
+          
+          <p id="new-event"></p>
+          
+          <p id="new-location"></p>
+          
+          <p id="new-name-event"></p>
+          
+          <p id="new-visitors"></p>
+          
+          <p id="new-date"></p>
+         
+          <p id="new-time"></p>
+         
+          <p id="new-description"></p>
         </div>
+
+      </div>
     </div>
-    
-    
+  </div>
+
+   <script src="js/formValidation.js"></script>
+
 </body>
 </html>

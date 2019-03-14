@@ -14,6 +14,20 @@ a:hover {
     text-decoration: none;
     color: #000;
 }
+.noSelect {
+	-webkit-touch-callout: none;
+	/* iOS Safari */
+	-webkit-user-select: none;
+	/* Safari */
+	-khtml-user-select: none;
+	/* Konqueror HTML */
+	-moz-user-select: none;
+	/* Firefox */
+	-ms-user-select: none;
+	/* Internet Explorer/Edge */
+	user-select: none;
+	/* Non-prefixed version, currently supported by Chrome and Opera */
+}
 
 /*** HOME PAGE ***/
 
@@ -28,30 +42,6 @@ a:hover {
     width: 7%;
     margin: 50px 0px 50px 50px;
 }
-/* logo animation */
-
-@keyframes logo {
-    0% {
-        color: transparent;
-        opacity: 0;
-        transform: translateY(50px);
-    }
-   
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-.logo {
-    animation-name: logo;
-    animation-duration: 2s;
-    animation-delay: 1s;
-    animation-timing-function: linear;
-    animation-fill-mode: backwards;
-}
-
-/* end */
-
 .home-h1 {
     text-align: center;
     color: #fff;
@@ -60,32 +50,6 @@ a:hover {
     letter-spacing: 3px;
     padding-bottom: 50px;
 }
-
-/* h1 home animation */
-
-@keyframes top {
-    0% {
-        color: transparent;
-        opacity: 0;
-        transform: translateY(-200px);
-    }
-   
-    100% {
-        color: white;
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-.home-h1 {
-    animation-name: top;
-    animation-duration: 2s;
-    animation-delay: 1s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: backwards;
-}
-
-/* end */
-
 .flex-nav {
     display: flex;
     text-align: center;
@@ -95,7 +59,7 @@ a:hover {
 .primary {
     letter-spacing: 1.5px;
     border: 1px solid #fff;
-    width: 50%;
+    width: 250px;
     height: 50px;
     background-color: transparent;
     color: #fff;
@@ -104,9 +68,9 @@ a:hover {
 .secondary {
     letter-spacing: 1.5px;
     border: 1px solid #fff;
-    border-radius: 25px;
+    border-radius: 15px;
     color: #fff;
-    width: 50%;
+    width: 250px;
     height: 50px; 
     background-color: transparent;
     box-shadow: 2px 4px 6px #333;
@@ -122,6 +86,7 @@ a:hover {
     transition: 0.3s;
     font-weight: bold;
     transform: translateY(-3px);
+    box-shadow: none;
 }
 .secondary:hover,
 .secondary:active {
@@ -133,55 +98,6 @@ a:hover {
     transform: translateY(-3px);
 }
 
-/* primary button animation */
-
-@keyframes left {
-    0% {
-        color: transparent;
-        opacity: 0;
-        transform: translateX(-200px);
-    }
-   
-    100% {
-        color: white;
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-.primary {
-    animation-name: left;
-    animation-duration: 2s;
-    animation-delay: 1s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: backwards;
-}
-
-/* end */
-
-/* secondary button aimation */
-
-@keyframes right {
-    0% {
-        color: transparent;
-        opacity: 0;
-        transform: translateX(200px);
-    }
-   
-    100% {
-        color: white;
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-.secondary {
-    animation-name: right;
-    animation-duration: 2.5s;
-    animation-delay: 1.5s;
-    animation-timing-function: ease-in;
-    animation-fill-mode: backwards;
-}
-
-/* end */
 
 /*** THEATER ***/
 
@@ -198,7 +114,6 @@ a:hover {
     margin: 0 auto;
     margin-top: 30px;
 }
-
 .theater-p {
     text-align: justify;
     padding: 20px 5px;
@@ -262,6 +177,10 @@ a:hover {
 marquee {
     padding: 70px 0px 30px 0px;
 }
+#iframe-museum {
+    width: 100%;
+    height: 100%;
+}
 
 /*** CINEMA ***/
 
@@ -277,6 +196,7 @@ marquee {
     text-align: center;
     color: #fff;
     padding-top: 100px;
+    font-style: italic;
 }
 .banner1-h1:hover,
 .banner1-h1:active {
@@ -293,7 +213,10 @@ marquee {
     padding: 10px;
 }
 .movies1 p {
-    padding-top: 20px;
+    padding-top: 10px;
+}
+blockquote {
+    padding-top: 10px;
 }
 
 .banner2 {
@@ -323,6 +246,10 @@ marquee {
     text-align: center;
     padding: 20px;
 }
+.iframe-movie {
+    width: 50%;
+    height: 100%;
+}
 
 .banner3 {
     background-image: url(../img/bioskop/roda/roda.jpg);
@@ -340,10 +267,9 @@ marquee {
     padding-top: 100px;
   }
   .movies3 {
-    padding: 30px;
+    padding: 20px;
     text-align: center;
 }
-
 
 /*** FOOTER ***/
 
@@ -351,10 +277,10 @@ marquee {
     background-color: #f2f2f2;
     border-top: 1px solid rgb(165, 165, 165);
 }
-.list {
+.footer-ul {
     list-style: none;
 }
-.list li {
+.footer-ul li {
     display: inline-block;
 }
 .footer-flex {
@@ -370,17 +296,104 @@ marquee {
 /*** FORM ***/
 
 .formwall {
-    background-image: url(../img/forma.jpg);
+    background-image: url(../img/forma1.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     height: 100vh;
 }
-.form1 {
-    display: flex;
-    justify-content: center;
-}
+
+
 
 /*** @KEYFRAMES ***/
 
+/* logo animation */
+@keyframes logo {
+    0% {
+        color: transparent;
+        opacity: 0;
+        transform: translateY(50px);
+    }
+   
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+.logo {
+    animation-name: logo;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+}
+/* end */
 
+/* h1 home animation */
+@keyframes top {
+    0% {
+        color: transparent;
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+   
+    100% {
+        color: white;
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+.home-h1 {
+    animation-name: top;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+/* end */
+
+/* primary button animation */
+@keyframes left {
+    0% {
+        color: transparent;
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+   
+    100% {
+        color: white;
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+.primary {
+    animation-name: left;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+/* end */
+
+/* secondary button aimation */
+@keyframes right {
+    0% {
+        color: transparent;
+        opacity: 0;
+        transform: translateX(200px);
+    }
+   
+    100% {
+        color: white;
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+.secondary {
+    animation-name: right;
+    animation-duration: 2.5s;
+    animation-delay: 1.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: backwards;
+}
+/* end */
