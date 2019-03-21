@@ -32,7 +32,7 @@ a:hover {
 /*** HOME PAGE ***/
 
 .home-page {
-    background-image: linear-gradient(rgba(141, 65, 65, 0.7), rgba(80, 38, 38, 0.7)),  url(../img/1.1.jpg);
+    background-image: linear-gradient(rgba(141, 65, 65, 0.7), rgba(80, 38, 38, 0.7)),  url(../img/1.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -88,6 +88,9 @@ a:hover {
     transform: translateY(-3px);
     box-shadow: none;
 }
+.secondary:link,
+.secondary:visited,
+.secondary:focus,
 .secondary:hover,
 .secondary:active {
     border: 1px solid #f1ed43;
@@ -96,6 +99,7 @@ a:hover {
     transition: 0.3s;
     font-weight: bold;
     transform: translateY(-3px);
+    box-shadow: none;
 }
 
 

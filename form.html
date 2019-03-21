@@ -18,17 +18,17 @@
               <fieldset>
                 <legend>Личне информације:</legend>
                 <label for="name">Име:</label> 
-                <input type="text" name="" id="name"> <br>
+                <input type="text" name="Име" id="name"> <br>
                 <label for="last-name">Презиме:</label>
-                <input type="text" name="" id="last-name"> <br>
+                <input type="text" name="Презиме" id="last-name"> <br>
               </fieldset> <br>
 
               <fieldset>
                 <label for="event">Изабери догађај:</label>
                 <select name="dogadjaj" id="event">
-                  <optgroup>
+                  
                     <option value="wrong">-------</option>
-                  </optgroup>
+                  
                   <optgroup label="Позориште">
                     <option value="Представа">Представа</option>
                     <option value="Опера">Опера</option>
@@ -47,9 +47,9 @@
                 </select> <br> <br>
                 <label for="location">Локација:</label> 
                 <select name="Lokacija" id="location"> 
-                  <optgroup>
+                  
                     <option value="wrong">-------</option>
-                  </optgroup>
+                  
                   <optgroup label="Позориште">
                     <option value="Позориште на теразијама">Позориште на теразијама</option>
                     <option value="Југословенско драмско">Југословенско драмско</option>
@@ -67,21 +67,22 @@
                   </optgroup>
                 </select> <br> <br>
                 <label for="name-event">Назив догађаја:</label> 
-                <input type="text" name="" id="name-event"> 
+                <input type="text" name="Назив догађаја" id="name-event"> 
               </fieldset> <br>
 
               <fieldset>
                 <label for="visitors">Очекивани број посетилаца:</label>
-                <input type="text" name="" id="visitors"> <br> <br>
+                <input type="text" name="Број" id="visitors"> <br> <br>
                 <label for="date">Датум:</label>
-                <input type="date" name="" id="date"> <br> <br>
+                <input type="date" name="Датум" id="date"> <br> <br>
                 <label for="time">Време:</label>
-                <input type="time" name="" id="time"> <br> <br>
+                <input type="time" name="Време" id="time"> <br> <br>
                 <label for="description">Кратак опис догађаја:</label>
-                <textarea name="" id="description" cols="20" rows="2"></textarea> 
+                <textarea name="Опис" id="description" cols="20" rows="2"></textarea> 
               </fieldset> <br>
 
-              <input type="button" name="" id="" value="Шаљи" onclick="validateForm()">
+              <input type="button" name="Дугме" id="send" value="Шаљи" onclick="validateForm()">
+            </form>
         </div> 
       
       <div class="col-lg-6 col-md-6 col-sm-12">
@@ -111,6 +112,8 @@
   </div>
 
    <script src="js/formValidation.js"></script>
+   <script src="/js/javascript.js"></script>
+   <script src="/js/jquery-3.3.1.js"></script>
 
 </body>
 </html>
