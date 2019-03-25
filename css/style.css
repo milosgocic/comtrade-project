@@ -68,7 +68,6 @@ a:hover {
 .secondary {
     letter-spacing: 1.5px;
     border: 1px solid #fff;
-    border-radius: 15px;
     color: #fff;
     width: 250px;
     height: 50px; 
@@ -248,7 +247,10 @@ blockquote {
 }
 .movies2 {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
+}
+.just {
+    text-align: justify;
 }
 .iframe-movie {
     width: 50%;
