@@ -103,7 +103,9 @@ a:hover {
 
 
 /*** THEATER ***/
-
+.bckg-theater {
+    background-color: #f4f4f4;
+}
 .theater-h1 {
     padding: 70px 0px;
     text-align: center;
@@ -116,6 +118,15 @@ a:hover {
     width: 100px;
     margin: 0 auto;
     margin-top: 30px;
+}
+.box-shadow img {
+    padding-top: 10px;
+}
+.box-shadow {
+    box-shadow: 5px 5px 15px #000;
+}
+.icons-center {
+    text-align: center;
 }
 .theater-p {
     text-align: justify;
@@ -403,3 +414,46 @@ blockquote {
     animation-fill-mode: backwards;
 }
 /* end */
+
+/* jquery animation */
+.js--wp1,
+.js--wp2,
+.js--wp3,
+.js--wp4,
+.js--wp5,
+.js--wp6,
+.js--wp7,
+.js--wp8, 
+.js--wp9, 
+.js--wp10,
+.js--wp11,
+.js--wp12,
+.js--wp13,
+.js--wp14,
+.js--wp15,
+.js--wp16,
+.js--wp17,
+.js--wp18 {
+    opacity: 0;
+    animation-duration: 2.5s;
+}
+.js--wp1.animated,
+.js--wp2.animated,
+.js--wp3.animated,
+.js--wp4.animated,
+.js--wp5.animated,
+.js--wp6.animated,
+.js--wp7.animated,
+.js--wp8.animated,
+.js--wp9.animated,
+.js--wp10.animated,
+.js--wp11.animated,
+.js--wp12.animated,
+.js--wp13.animated,
+.js--wp14.animated,
+.js--wp15.animated,
+.js--wp16.animated,
+.js--wp17.animated,
+.js--wp18.animated {
+    opacity: 1;
+}
