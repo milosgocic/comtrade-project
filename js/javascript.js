@@ -55,12 +55,12 @@ $(".js--wp8").waypoint(function(direction) {
  offset: "60%;"
 });
 $(".js--wp9").waypoint(function(direction) {
-    $(".js--wp9").addClass("animated shake");
+    $(".js--wp9").addClass("animated zoomIn");
 }, {
  offset: "80%;"
 });
 $(".js--wp10").waypoint(function(direction) {
-    $(".js--wp10").addClass("animated shake");
+    $(".js--wp10").addClass("animated zoomIn");
 }, {
  offset: "80%;"
 });
