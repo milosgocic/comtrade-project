@@ -457,3 +457,36 @@ blockquote {
 .js--wp18.animated {
     opacity: 1;
 }
+
+/* sticky */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: linear-gradient(rgb(187, 187, 187), #fff);
+    box-shadow: 0 2px 8px #000;
+    z-index: 2;
+}
+.sticky-nav {
+    display: none;
+}
+.sticky .flex-nav {
+    padding: 5px 0px;
+}
+.sticky .primary {
+    border: 1px solid #000;
+    width: 150px;
+    height: 30px;
+    background-color: transparent;
+    color: #000;
+}
+.sticky .secondary {
+    
+    border: 1px solid #000;
+    color: #000;
+    width: 150px;
+    height: 30px; 
+    background-color: transparent;
+}
